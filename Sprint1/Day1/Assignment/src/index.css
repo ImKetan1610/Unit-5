@@ -1,0 +1,18 @@
+.main {
+    /* border: 1px solid red; */
+    width:800px;
+    margin: auto;
+}
+#imgdiv{
+    display:flex;
+    justify-content: space-around;
+    padding:10px;
+    background-color: aqua;
+}
+#imgdiv>button,input{
+    height:20px;
+    margin-top: 20px;
+}
+#imgdiv>button{
+    width:100px;
+}
