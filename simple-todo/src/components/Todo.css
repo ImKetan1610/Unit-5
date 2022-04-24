@@ -1,1 +1,46 @@
+#todoInput {
+    /* width: 800px; */
+    border-radius: 5px;
+    border:1px solid gray;
+    height: 20px;
+}
 
+#main{
+    background-color: lightgray;
+    padding: 5px 0;
+    margin: auto;
+    width:400px;
+    min-height: 100px;
+}
+
+.todo-item{
+    margin: auto;
+    width: 200px;
+    text-align: left;
+    justify-content: space-between;
+    /* border: 1px solid */
+}
+
+.todo-not-done {
+    height: 40px;
+    width: 40px;
+    background: rgb(126, 237, 22);
+    border: 0.2em solid darkslategray;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.todo-done {
+    height: 40px;
+    width: 40px;
+    background: rgb(238, 8, 11);
+    border: 0.2em solid darkslategray;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#add{
+    border-radius: 50%;
+    margin-left: 20px;
+    border: 0.05em solid;
+}
