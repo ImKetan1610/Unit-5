@@ -1,0 +1,31 @@
+{
+  "employee": [
+    {
+      "name": "Ketan",
+      "age": "26",
+      "address": "13, Zingabai Takli, Nagpur",
+      "department": "Development",
+      "salary": "11111",
+      "id": 1,
+      "maritalStatus": "Single"
+    },
+    {
+      "name": "K M",
+      "age": "18",
+      "address": "221B, baker street",
+      "department": "HR",
+      "salary": "1000000",
+      "maritalStatus": "",
+      "id": 2
+    },
+    {
+      "name": "Ketan Rajabhau Makode",
+      "age": "26",
+      "address": "13, MUKTAI, SANT GAJANAN NAGAR, ZINGABAI TAKLI, NAGPUR",
+      "department": "Development",
+      "salary": "50000",
+      "maritalStatus": "Single",
+      "id": 3
+    }
+  ]
+}
