@@ -1,13 +1,55 @@
 
-Explain briefly what happens when you hit a url? explain DNS lookup?
+Explain briefly what happens when you hit a url? 
+Ans: You enter a URL into a web browser. The browser looks up the IP address for the domain name via DNS. The browser sends a HTTP request to the server
+The server sends back a HTTP response. The browser begins rendering the HTML. The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3-5. Once the page is loaded, the browser sends further async requests as needed.
+
+****************************************************************************************************************************************************************
+
+Explain DNS lookup?
+Ans: Domain name system (DNS) lookups are how end users obtain the websites they search for. It is the way DNS services resolve end-user queries and acquire information related to domains. A DNS lookup, in a general sense, is the process by which a DNS record is returned from a DNS server. This is like looking up a phone number in a phone book - that is why it is referred to as a "lookup". Interconnected computers, servers and smart phones need to know how to translate the email addresses and domain names people use into meaningful numerical addresses. A DNS lookup performs this function.
+
+*****************************************************************************************************************************************************************
+
 What is a URLs full form? Explain what a url is and the four parts it consists of The protocol in use The hostname of the server The location of the file The arguments to the file?
+Ans: A URL (Uniform Resource Locator) is a unique identifier used to locate a resource on the Internet. It is also referred to as a web address. URLs consist of multiple parts -- including a protocol and domain name -- that tell a web browser how and where to retrieve a resource. 1.The protocol or scheme: Used to access a resource on the internet. Protocols include http, https, ftps, mailto and file. The resource is reached through the domain name system (DNS) name. In this example, the protocol is https. 2. Host name or domain name: The unique reference the represents a webpage. For this example, whatis.techtarget.com. 3. Port name.: Usually not visible in URLs, but necessary. Always following a colon, port 80 is the default port for web servers, but there are other options. For example, :port80. 4. Path: A path refers to a file or location on the web server. For this example, search/query. 5. Query: Found in the URL of dynamic pages. The query consists of a question mark, followed by parameters. For this example, ?. 6. Parameters: Pieces of information in a query string of a URL. Multiple parameters can be separated by ampersands (&). For this example, q=URL. 7. Fragment: This is an internal page reference, which refers to a section within the webpage. It appears at the end of a URL and begins with a hashtag (#). Although not in the example above, an example could be #history in the URL 
+
+******************************************************************************************************************************************************************
+
 What is HTTP protocol?
+Ans: HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. A complete document is reconstructed from the different sub-documents fetched, for instance, text, layout description, images, videos, scripts, and more.
+
+******************************************************************************************************************************************************************
+
 What is TCP Protocol?
+Ans: TCP stands for Transmission Control Protocol a communications standard that enables application programs and computing devices to exchange messages over a network. It is designed to send packets across the internet and ensure the successful delivery of data and messages over networks. TCP is one of the basic standards that define the rules of the internet and is included within the standards defined by the Internet Engineering Task Force (IETF). It is one of the most commonly used protocols within digital network communications and ensures end-to-end data delivery. TCP organizes data so that it can be transmitted between a server and a client. It guarantees the integrity of the data being communicated over a network. Before it transmits data, TCP establishes a connection between a source and its destination, which it ensures remains live until communication begins. It then breaks large amounts of data into smaller packets, while ensuring data integrity is in place throughout the process.
+
+*******************************************************************************************************************************************************************
+
 Explain all the different HTTP methods?
+Ans: The primary or most commonly-used HTTP methods are POST, GET, PUT, PATCH, and DELETE. These methods correspond to create, read, update, and delete (or CRUD) operations, respectively. There are a number of other methods, too, but they are utilized less frequently. 1. POST:- The POST method is most often utilized to create new resources. In particular, it is used to create subordinate resources. That is subordinate to some other (e.g. parent) resource. In other words, when creating a new resource, POST to the parent and the service takes care of associating the new resource with the parent, assigning an ID (new resource URI), etc. On successful creation, HTTP response code 201 is returned. 2. GET:- The HTTP GET method is used to read (or retrieve) a representation of a resource. In case of success (or non-error), GET returns a representation in JSON and an HTTP response status code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST). 3.PATCH:- PATCH is used to modify resources. The PATCH request only needs to contain the changes to the resource, not the complete resource. In other words, the body should contain a set of instructions describing how a resource currently residing on the server should be modified to produce a new version. 4.DELETE:- DELETE is quite easy to understand. It is used to delete a resource identified by filters or ID. On successful deletion, the HTTP response status code 204 (No Content) returns with no response body.
+
+*******************************************************************************************************************************************************************
+
 What are HTTP headers?
+Ans:- HTTP headers let the client and the server pass additional information with an HTTP request or response. An HTTP header consists of its case-insensitive name followed by a colon (:), then by its value. Whitespace before the value is ignored. Headers can be grouped according to their contexts: 1.Request headers contain more information about the resource to be fetched, or about the client requesting the resource.. 2.Response headers hold additional information about the response, like its location or about the server providing it. 3.Representation headers contain information about the body of the resource, like its MIME type, or encoding/compression applied. 4.Payload headers contain representation-independent information about payload data, including content length and the encoding used for transport.
+
+*******************************************************************************************************************************************************************
+
 What are some HTTP response codes? what does it mean? 2xx, 3xx, 4xx, 5xx
+Ans:-HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:1. Informational responses (100–199) 2. Successful responses (200–299) 3. Redirection messages (300–399) 4. Client error responses (400–499) 5. Server error responses (500–599)
+
+******************************************************************************************************************************************************************
+
 What does cache control on http response mean?
+ANS:- Cache-control is an HTTP header used to specify browser caching policies in both client requests and server responses. Policies include how a resource is cached, where it's cached and its maximum age before expiring (i.e., time to live).
+
+******************************************************************************************************************************************************************
+
 What is polling?
+Ans:- Polling is the process where the computer or controlling device waits for an external device to check for its readiness or state, often with low-level hardware. For example, when a printer is connected via a parallel port, the computer waits until the printer has received the next character. These processes can be as minute as only reading one bit. This is sometimes used synonymously with 'busy-wait' polling. In this situation, when an I/O operation is required, the computer does nothing other than check the status of the I/O device until it is ready, at which point the device is accessed. In other words, the computer waits until the device is ready. Polling also refers to the situation where a device is repeatedly checked for readiness, and if it is not, the computer returns to a different task. Although not as wasteful of CPU cycles as busy waiting, this is generally not as efficient as the alternative to polling, interrupt-driven I/O.
+
+******************************************************************************************************************************************************************
+
 What is long polling?
 What are web sockets?
 How is web sockets different from HTTP?
