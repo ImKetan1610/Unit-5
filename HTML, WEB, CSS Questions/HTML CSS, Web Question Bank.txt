@@ -51,6 +51,20 @@ Ans:- Polling is the process where the computer or controlling device waits for 
 ******************************************************************************************************************************************************************
 
 What is long polling?
+Ans:- So-called “long polling” is a much better way to poll the server.
+
+It’s also very easy to implement, and delivers messages without delays.
+
+The flow:
+
+A request is sent to the server.
+The server doesn’t close the connection until it has a message to send.
+When a message appears – the server responds to the request with it.
+The browser makes a new request immediately.
+The situation when the browser sent a request and has a pending connection with the server, is standard for this method. Only when a message is delivered, the connection is reestablished.
+
+********************************************************************************************************************************************************************
+
 What are web sockets?
 How is web sockets different from HTTP?
 What is HTTPS?
