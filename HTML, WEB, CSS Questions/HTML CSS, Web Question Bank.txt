@@ -66,17 +66,74 @@ The situation when the browser sent a request and has a pending connection with 
 ********************************************************************************************************************************************************************
 
 What are web sockets?
+Ans:- The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
+
+********************************************************************************************************************************************************************
+
 How is web sockets different from HTTP?
+Ans:- Unlike HTTP, where you have to constantly request updates, with websockets, updates are sent immediately when they are available. WebSockets keeps a single, persistent connection open while eliminating latency problems that arise with HTTP request/response-based methods
+
+********************************************************************************************************************************************************************
+
 What is HTTPS?
+Ans:- HTTP stands for Hyper Text Transfer Protocol.
+WWW is about communication between web clients and servers.
+Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses
+
+********************************************************************************************************************************************************************
+
 What is Cross Origin Resource Sharing? ( CORS ) Why do we need it?
+Ans:- Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request.
+The CORS mechanism supports secure cross-origin requests and data transfers between browsers and servers. Modern browsers use CORS in APIs such as XMLHttpRequest or Fetch to mitigate the risks of cross-origin HTTP requests.
+
+*********************************************************************************************************************************************************************
+
 What does Access-Control-Allow-Origin header do?
+Ans:- The Access-Control-Allow-Origin header is included in the response from one website to a request originating from another website, and identifies the permitted origin of the request. A web browser compares the Access-Control-Allow-Origin with the requesting website's origin and permits access to the response if they match.
+
+*********************************************************************************************************************************************************************
+
 What is clickjacking? How do you fix it?
+Ans:- Clickjacking is an attack that fools users into thinking they are clicking on one thing when they are actually clicking on another. Its other name, user interface (UI) redressing, better describes what is going on. Users think they are using a web page’s normal UI, but in fact there is a hidden UI in control; in other words, the UI has been redressed. When users click something they think is safe, the hidden UI performs a different action.
+There are no perfect defenses against clickjacking. But there are actions you can take to reduce your risk. On the client side, disabling JavaScript is effective, but since so many sites rely on JavaScript, turning it off renders many sites unusable. There are some commercial products that can provide protection while trying not to affect the real use of iframes. This can work well within an organization, where the products can be rolled out to employee desktops, but it does nothing to protect customers using the organization’s websites.
+
+*********************************************************************************************************************************************************************
+
 What are some performance metrics for your website?
+Ans:- Key performance indicator are:- 1. Measure websites audience, 2. Analyze your traffic source, 3. MEASURE BOUNCE RATE AND AVERAGE SESSION TIME, 4. Measure conversion rates, 5. Measure profits and ROI
+
+*********************************************************************************************************************************************************************
+
 What does the following term mean?
-Time to first byte,
-Page load time
+1.Time to first byte
+Ans:-Time to First Byte (TTFB) refers to the time between the browser requesting a page and when it receives the first byte of information from the server. This time includes DNS lookup and establishing the connection using a TCP handshake and SSL handshake if the request is made over https.
+2.Page load time
+Ans:-page load time is the average amount of time it takes for a page to show up on your screen. It's calculated from initiation (when you click on a page link or type in a Web address) to completion (when the page is fully loaded in the browser).
+
+*********************************************************************************************************************************************************************
+
 What do CDN or Content Delivery Networks do? When do you need a CDN?
+Ans:- A content delivery network (CDN) is a group of geographically distributed servers that speed up the delivery of web content by bringing it closer to where users are. Data centers across the globe use caching, a process that temporarily stores copies of files, so that you can access internet content from a web-enabled device or browser more quickly through a server near you. CDNs cache content like web pages, images, and video in proxy servers near to your physical location. This allows you to do things like watch a movie, download software, check your bank balance, post on social media, or make purchases, without having to wait for content to load.
+
+*********************************************************************************************************************************************************************
+
 What is the difference between Client Side Renderring and Server Side Renderring?
+Ans: Client-side rendering manages the routing dynamically without refreshing the page every time a user requests a different route. But server-side rendering is able to display a fully populated page on the first load for any route of the website, whereas client-side rendering displays a blank page first.
+
+*********************************************************************************************************************************************************************
+
 What is Progressive Renderring
+Ans:- Progressive Rendering, also known as Progressive Server Side Rendering, is a technique for updating tiny sections of a webpage progressively and streaming it to the client in segments rather than waiting for the full page to be displayed.
+It implies that once the important material is produced on the server, you may stream it to the client without having to wait for non-critical stuff to be displayed. It combines the advantages of both CSR (Client Side Rendering) and SSR (Server Side Rendering) (Server Side Rendering).
+
+*********************************************************************************************************************************************************************
+
 What is the difference between Preloading and Prefetching resources?
+Ans:- Preload is an early fetch instruction to the browser to request a resource needed for a page (key scripts, Web Fonts, hero images). Prefetch serves a slightly different use case — a future navigation by the user (e.g between views or pages) where fetched resources and requests need to persist across navigations.
+
+*********************************************************************************************************************************************************************
+
 What are service workers?
+Ans:-  A service worker is a type of web worker. It's essentially a JavaScript file that runs separately from the main browser thread, intercepting network requests, caching or retrieving resources from the cache, and delivering push messages.
+
+*********************************************************************************************************************************************************************
