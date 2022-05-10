@@ -5,7 +5,7 @@ const TodoItem = ({ value, deleteTodo }) => {
     <div className={style.div}>
         <div>
           <h1>{value.title}</h1>
-          <button onClick={() => deleteTodo(value.id)}>Delete</button>
+          <button onClick={() => deleteTodo(value.id)}>Completed</button>
         </div>
     </div>
   );
